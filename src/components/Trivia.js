@@ -64,7 +64,7 @@ export default function Trivia({
       <div className="answers">
         {question?.answers.map((a) => (
           <div
-            key = {question.id}
+            key = {a}
             className={selectedAnswer === a ? className : "answer"}
             onClick={() => !selectedAnswer && handleClick(a)}
           >
